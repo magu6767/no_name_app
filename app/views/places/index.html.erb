@@ -1,0 +1,9 @@
+<h1>近くの作業場所</h1>
+<ul>
+  <% @places.each do |place| %>
+    <li>
+      <%= link_to place.name, place_path(place) %>
+      <p><%= place.address %></p>
+    </li>
+  <% end %>
+</ul>
